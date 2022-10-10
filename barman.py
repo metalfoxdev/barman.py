@@ -44,7 +44,7 @@ while(True):
                 cs()
             else:
                 print("I don't have that on the menu")
-                print(question(selections))
+                print(question("What can i get for you young sir?", ["beer","wine","lagar"]))
                 print("------------------------------------------------------------------")
                 va = False
                 cs()
@@ -53,7 +53,7 @@ while(True):
             if branch == 1:
                 print(question("What will you do?", ["Hit the person beside you with your bottle of beer","Smash your beer bottle and ask for another","Drink your beer and leave"]))
             elif branch == 2:
-                    print(question(["White","Red"]))
+                    print(question("Which type do you want?", ["White","Red"]))
                     answer = input("Enter your choice - ")
                     if answer == 1:
                         input("White wine it is! \nPress ENTER to continue...")
