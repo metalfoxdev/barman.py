@@ -18,8 +18,7 @@ while(True):
     cs()
     if age > 17:
         print("What can i get for you young sir?")
-        selections = ["beer","wine","lagar"]
-        print(mkopt(selections))
+        print(question("What can i get for you young sir?", ["beer","wine","lagar"]))
         va = False
         while va == False:
             answer = input("Enter your choice - ")
@@ -45,7 +44,7 @@ while(True):
                 cs()
             else:
                 print("I don't have that on the menu")
-                print(mkopt(selections))
+                print(question(selections))
                 print("------------------------------------------------------------------")
                 va = False
                 cs()
@@ -53,9 +52,9 @@ while(True):
         while va == False:
             print("What will you do?")
             if branch == 1:
-                print(mkopt(["Hit the person beside you with your bottle of beer","Smash your beer bottle and ask for another","Drink your beer and leave"]))
+                print(question(["Hit the person beside you with your bottle of beer","Smash your beer bottle and ask for another","Drink your beer and leave"]))
             elif branch == 2:
-                    print(mkopt(["White","Red"]))
+                    print(question(["White","Red"]))
                     answer = input("Enter your choice - ")
                     if answer == 1:
                         input("White wine it is! \nPress ENTER to continue...")
@@ -65,7 +64,7 @@ while(True):
                         # implement branching
                     else:
                         print("You can't do that. \nPress ENTER to Continue...")
-                        print(mkopt(["White","Red"]))
+                        print(question(["White","Red"]))
                         print("------------------------------------------------------------------")
                         va = False
                         cs()
