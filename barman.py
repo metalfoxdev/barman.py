@@ -3,10 +3,11 @@ import os
 # Ideas
 # Keep list of choices and use the list to write the future
 while(True):
-    age = input("What is your age? - ")
-    age = int(age)
     def cs():
         os.system("cls||clear")
+    cs()
+    age = input("What is your age? - ")
+    age = int(age)
     def question(q, sel):
         output = str()
         i = 1
