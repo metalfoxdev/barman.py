@@ -11,7 +11,7 @@ while(True):
         output = str()
         i = 1
         for x in range(len(sel)):
-            output = output + "\n" + str(i) + ". " + sel[str(x + 1)]
+            output = output + "\n" + str(i) + ". " + sel[int(x)]
             i = i + 1
         return output
     cs()
@@ -54,7 +54,7 @@ while(True):
             if branch == 1:
                 print(mkopt(["Hit the person beside you with your bottle of beer","Smash your beer bottle and ask for another","Drink your beer and leave"]))
             elif branch == 2:
-                    print(mkopt({"1":"White", "2":"Red"}))
+                    print(mkopt(["White","Red"]))
                     answer = input("Enter your choice - ")
                     if answer == 1:
                         input("White wine it is! \nPress ENTER to continue...")
@@ -64,7 +64,7 @@ while(True):
                         # implement branching
                     else:
                         print("You can't do that. \nPress ENTER to Continue...")
-                        print(mkopt({"1":"White", "2":"Red"}))
+                        print(mkopt(["White","Red"]))
                         print("------------------------------------------------------------------")
                         va = False
                         cs()
