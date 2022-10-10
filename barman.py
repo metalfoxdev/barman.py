@@ -7,11 +7,11 @@ while(True):
     age = int(age)
     def cs():
         os.system("cls||clear")
-    def mkopt(sel):
+    def question(q, sel):
         output = str()
         i = 1
         for x in range(len(sel)):
-            output = output + "\n" + str(i) + ". " + sel[int(x)]
+            output = output + "\n" + str(i) + ". " + o[int(x)]
             i = i + 1
         return output
     cs()
