@@ -17,7 +17,6 @@ while(True):
         return output
     cs()
     if age > 17:
-        print("What can i get for you young sir?")
         print(question("What can i get for you young sir?", ["beer","wine","lagar"]))
         va = False
         while va == False:
