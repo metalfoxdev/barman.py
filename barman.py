@@ -50,9 +50,8 @@ while(True):
                 cs()
         va = False
         while va == False:
-            print("What will you do?")
             if branch == 1:
-                print(question(["Hit the person beside you with your bottle of beer","Smash your beer bottle and ask for another","Drink your beer and leave"]))
+                print(question("What will you do?", ["Hit the person beside you with your bottle of beer","Smash your beer bottle and ask for another","Drink your beer and leave"]))
             elif branch == 2:
                     print(question(["White","Red"]))
                     answer = input("Enter your choice - ")
