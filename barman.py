@@ -63,7 +63,7 @@ while(True):
                         # implement branching
                     else:
                         print("You can't do that. \nPress ENTER to Continue...")
-                        print(question(["White","Red"]))
+                        print(question("Which type do you want?", ["White","Red"]))
                         print("------------------------------------------------------------------")
                         va = False
                         cs()
