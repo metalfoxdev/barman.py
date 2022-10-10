@@ -13,6 +13,7 @@ while(True):
         for x in range(len(sel)):
             output = output + "\n" + str(i) + ". " + o[int(x)]
             i = i + 1
+        output = q + "\n" + output
         return output
     cs()
     if age > 17:
