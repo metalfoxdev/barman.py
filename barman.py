@@ -11,7 +11,7 @@ while(True):
         output = str()
         i = 1
         for x in range(len(sel)):
-            output = output + "\n" + str(i) + ". " + o[int(x)]
+            output = output + "\n" + str(i) + ". " + sel[int(x)]
             i = i + 1
         output = q + "\n" + output
         return output
